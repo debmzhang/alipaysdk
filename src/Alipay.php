@@ -3,11 +3,11 @@
  * @description alipay 扩展
  */
 
-namespace debmzhang\alipaysdk;
-
 require __DIR__ . DIRECTORY_SEPARATOR . 'aop' . DIRECTORY_SEPARATOR . 'AopClient.php';
 require __DIR__ . DIRECTORY_SEPARATOR . 'buildermodel' . DIRECTORY_SEPARATOR . 'AlipayTradeWapPayContentBuilder.php';
 require __DIR__ . DIRECTORY_SEPARATOR . 'aop' . DIRECTORY_SEPARATOR . 'request' . DIRECTORY_SEPARATOR . 'AlipayTradeWapPayRequest.php';
+
+namespace debmzhang\alipaysdk;
 
 class Alipay
 {
