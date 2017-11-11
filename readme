@@ -1,5 +1,5 @@
 <?php
-// test
+// test for php script
 include __DIR__  . '/src/Alipay.php';
 
 $config = array(
