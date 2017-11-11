@@ -1,0 +1,17 @@
+{
+    "name": "debmzhang/alipaysdk",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "debmzhang",
+            "email": "debmzhang@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "debmzhang\\alipaysdk\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+<?php
+include __DIR__  . '/src/Alipay.php';
+
+$config = array(
+    // 应用ID
+    'app_id' => '2017060507426799',
+    // 签名方式
+    'sign_type' => 'RSA2',
+    // todo 以下三个加密文件, 上线时需申请线上帐号的对应文件
+    // @see https://doc.open.alipay.com/doc2/detail.htm?treeId=200&articleId=105310&docType=1
+    // 支付宝公钥文件
+    'alipay_public_key_file' => '',
+    // 商户私钥文件
+    'merchant_private_key_file' => '',
+    // 商户公钥文件
+    'merchant_public_key_file' => '',
+    //编码格式
+    'charset' => 'UTF-8',
+    // 支付宝网关
+    'gateway_url' => 'https://openapi.alipay.com/gateway.do',
+    // 异步通知地址
+    'notify_url' => '',
+    // 同步跳转
+    'return_url' => '',
+    // 返回值格式 json / xml
+    'format' => 'json',
+    // 商品名称
+    'subject' => '',
+    // 商品描述
+    'body' => '',
+    // 支付超时时间(格式 eg: 5m [表示5分钟])
+    'timeout_express' => '30m',
+    // debug
+    'debug' => true,
+);
+
+$alipay = new Alipay($config);
+
+$orderid = mt_rand(10000000, 99999999);
+
+$money = 1;
+
+$result = $alipay->pay($orderid, $money);
