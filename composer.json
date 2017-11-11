@@ -13,5 +13,6 @@
         "psr-4": {
             "debmzhang\\alipaysdk\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "stable"
 }
