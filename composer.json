@@ -10,9 +10,7 @@
     ],
     "require": {},
     "autoload": {
-        "psr-4": {
-            "debmzhang\\alipaysdk\\": "src/"
-        }
+        "files": ["src/Alipay.php"]
     },
     "minimum-stability": "stable"
 }
